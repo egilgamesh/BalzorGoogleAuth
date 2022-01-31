@@ -14,7 +14,7 @@ builder.Services.AddAuthentication(options =>
 	googleOptions.ClientId = builder.Configuration.GetSection("Google:ClientId").Value;
 	googleOptions.ClientSecret = builder.Configuration.GetSection("Google:ClientSecret").Value;
 });
-//builder.Services.AddCors(opt => opt.AddPolicy(name: _policyName, builder => builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod()));
+builder.Services.AddCors(opt => opt.AddPolicy(name: _policyName, builder => builder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod()));
 builder.Services.AddCors(opt => opt.AddDefaultPolicy(corsPolicyBuilder => corsPolicyBuilder.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod()));
 
 var app = builder.Build();
