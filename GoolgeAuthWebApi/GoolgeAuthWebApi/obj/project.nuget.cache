@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "qnk9dDX7OIOeQy8U/9CCdhNfL4Ga/sb0uaS95mdWn8a40vjZAnyfMKxIro+dHenTESuEPfA4qjCEqTXabL73eQ==",
+  "dgSpecHash": "oURTfU9ce6FlK/6TORfFug6+xkiWH00Ouu8D5notY0W8nTFFxvUMsJ8wELX4D/uVAYKRWP0wHargPq+6g2cNPw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\LENOVO\\source\\repos\\GoogleAuth\\GoolgeAuthWebApi\\GoolgeAuthWebApi\\GoolgeAuthWebApi.csproj",
+  "projectFilePath": "C:\\Users\\Jawad\\Documents\\GitHub\\BalzorGoogleAuth\\GoolgeAuthWebApi\\GoolgeAuthWebApi\\GoolgeAuthWebApi.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\LENOVO\\.nuget\\packages\\microsoft.aspnetcore.authentication.google\\6.0.1\\microsoft.aspnetcore.authentication.google.6.0.1.nupkg.sha512"
+    "C:\\Users\\Jawad\\.nuget\\packages\\microsoft.aspnetcore.authentication.google\\6.0.1\\microsoft.aspnetcore.authentication.google.6.0.1.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,9 +1,0 @@
-C:\Users\LENOVO\source\repos\GoogleAuth\GoolgeAuthWebApi\GoogleAuthWebClient\obj\Debug\net6.0\GoogleAuthWebClient.csproj.AssemblyReference.cache
-C:\Users\LENOVO\source\repos\GoogleAuth\GoolgeAuthWebApi\GoogleAuthWebClient\obj\Debug\net6.0\GoogleAuthWebClient.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\LENOVO\source\repos\GoogleAuth\GoolgeAuthWebApi\GoogleAuthWebClient\obj\Debug\net6.0\GoogleAuthWebClient.AssemblyInfoInputs.cache
-C:\Users\LENOVO\source\repos\GoogleAuth\GoolgeAuthWebApi\GoogleAuthWebClient\obj\Debug\net6.0\GoogleAuthWebClient.AssemblyInfo.cs
-C:\Users\LENOVO\source\repos\GoogleAuth\GoolgeAuthWebApi\GoogleAuthWebClient\obj\Debug\net6.0\GoogleAuthWebClient.csproj.CoreCompileInputs.cache
-C:\Users\LENOVO\source\repos\GoogleAuth\GoolgeAuthWebApi\GoogleAuthWebClient\obj\Debug\net6.0\GoogleAuthWebClient.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\LENOVO\source\repos\GoogleAuth\GoolgeAuthWebApi\GoogleAuthWebClient\obj\Debug\net6.0\GoogleAuthWebClient.dll
-C:\Users\LENOVO\source\repos\GoogleAuth\GoolgeAuthWebApi\GoogleAuthWebClient\obj\Debug\net6.0\ref\GoogleAuthWebClient.dll
-C:\Users\LENOVO\source\repos\GoogleAuth\GoolgeAuthWebApi\GoogleAuthWebClient\obj\Debug\net6.0\GoogleAuthWebClient.pdb
