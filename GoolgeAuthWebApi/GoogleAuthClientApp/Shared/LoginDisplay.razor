@@ -1,0 +1,36 @@
+﻿@using Microsoft.AspNetCore.Components.Authorization
+@using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+@inject IJSRuntime JSRuntime
+
+@inject NavigationManager Navigation
+@inject SignOutSessionStateManager SignOutManager
+
+<AuthorizeView>
+	<Authorized>
+		Hello, @context.User.Identity?.Name!
+		@currentInputValue
+
+		<img src= @context.User.Identity?/>
+		<button class="nav-link btn btn-link" @onclick="BeginSignOut">Logout</button>
+	</Authorized>
+	<NotAuthorized>
+		<a href="authentication/login" @onclick="Read">Login</a>
+	</NotAuthorized>
+</AuthorizeView>
+
+@code{
+
+	string currentInputValue;
+
+	private async Task BeginSignOut(MouseEventArgs args)
+	{
+		await SignOutManager.SetSignOutState();
+		Navigation.NavigateTo("authentication/logout");
+	}
+
+
+	public async Task Read()
+	{
+		currentInputValue = await JSRuntime.InvokeAsync<string>("localStorage.getItem", "profile:given_name");
+	}
+}

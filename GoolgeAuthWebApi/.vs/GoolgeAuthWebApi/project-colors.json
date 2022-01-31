@@ -1,0 +1,36 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "3661b39a-38e9-4364-9f5f-dfe1fb62390a": {
+      "ProjectGuid": "3661b39a-38e9-4364-9f5f-dfe1fb62390a",
+      "DisplayName": "GoolgeAuthWebApi",
+      "ColorIndex": 0
+    },
+    "6b4e8077-ad82-4395-a5ed-30d67404627a": {
+      "ProjectGuid": "6b4e8077-ad82-4395-a5ed-30d67404627a",
+      "DisplayName": "BalzorClientGoolgeAuth",
+      "ColorIndex": 1
+    },
+    "c233cfbb-1b45-4dd5-b06b-ba91b4f555d1": {
+      "ProjectGuid": "c233cfbb-1b45-4dd5-b06b-ba91b4f555d1",
+      "DisplayName": "GoogleAuthClient",
+      "ColorIndex": 2
+    },
+    "efb08965-a1e9-4c22-95d9-4cc7192edc01": {
+      "ProjectGuid": "efb08965-a1e9-4c22-95d9-4cc7192edc01",
+      "DisplayName": "GoogleAuthWebClient",
+      "ColorIndex": 3
+    },
+    "0bda452d-4370-4ec2-93c0-81c00f5119da": {
+      "ProjectGuid": "0bda452d-4370-4ec2-93c0-81c00f5119da",
+      "DisplayName": "GoogleAuthClientApp",
+      "ColorIndex": 4
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 5
+}
