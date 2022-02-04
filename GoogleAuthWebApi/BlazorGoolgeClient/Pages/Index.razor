@@ -1,0 +1,37 @@
+﻿@page "/"
+
+@using BlazorGoolgeClient.ViewModels
+@inject ILoginViewModel loginViewModel
+@inject NavigationManager navigationManager
+
+<h2><b>Login</b></h2>
+<hr>
+
+<div class="col-6">
+	<input type="text" @bind="loginViewModel.EmailAddress" class="form-control" placeholder="email address">
+</div>
+<br />
+<div class="col-6">
+	<input type="password" @bind="loginViewModel.Password" class="form-control" placeholder="password">
+</div>
+<br />
+<div class="col-6">
+	<button class="btn btn-primary" @onclick="LoginUser">Login</button>
+</div>
+<br />
+<br />
+<div class="col-6">
+	<a class="btn btn-block btn-social btn-google" @onclick="GoogleSignIn">
+		<span class="fa fa-google"></span> <b>Sign in with Google</b>
+	</a>
+</div>
+
+@code {
+	public async Task LoginUser()
+	{
+		await loginViewModel.LoginUser();
+		navigationManager.NavigateTo("/profile",true);
+	}
+
+	private void GoogleSignIn() => navigationManager.NavigateTo("user/GoogleSignIn", true);
+}

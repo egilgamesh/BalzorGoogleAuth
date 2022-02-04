@@ -1,12 +1,12 @@
 {
-  "iisSettings": {
-    "windowsAuthentication": false,
-    "anonymousAuthentication": true,
-    "iisExpress": {
-      "applicationUrl": "http://localhost:57423",
-      "sslPort": 44386
-    }
-  },
+	"iisSettings": {
+		"windowsAuthentication": false,
+		"anonymousAuthentication": true,
+		"iisExpress": {
+			"applicationUrl": "http://localhost:18790",
+			"sslPort": 44327
+		}
+	},
   "profiles": {
     "GoolgeAuthWebApi": {
       "commandName": "Project",
