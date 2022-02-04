@@ -29,12 +29,12 @@ public class UserController : ControllerBase
 
 	[Authorize]
 	[HttpGet("getcurrentuser")]
-	public async Task<string> GetCurrentUser()
+	public async Task<Dictionary<string, string>> GetCurrentUser()
 	{
+		Dictionary<string,string> result = new Dictionary<string,string>();
 		if (User.Identity!.IsAuthenticated)
-		{
-			return await Task.FromResult(User.FindFirstValue(ClaimTypes.Name));
-		}
+			result.Add("Username",User.FindFirstValue(ClaimTypes.Name));
+		return await Task.FromResult(result);
 		return null;
 	}
 

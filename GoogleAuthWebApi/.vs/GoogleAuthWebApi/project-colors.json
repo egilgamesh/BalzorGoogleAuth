@@ -35,7 +35,32 @@
       "ProjectGuid": "0ec554b7-0f5f-48eb-826c-dc9f811a05e5",
       "DisplayName": "WebGoolgeLoginClient",
       "ColorIndex": 5
+    },
+    "859fbc23-6f68-4ac4-bd1a-2f43ee646afb": {
+      "ProjectGuid": "859fbc23-6f68-4ac4-bd1a-2f43ee646afb",
+      "DisplayName": "GoogleAuthClientApp",
+      "ColorIndex": 6
+    },
+    "5b0fdd4f-8507-418e-98af-d47747bcd4f9": {
+      "ProjectGuid": "5b0fdd4f-8507-418e-98af-d47747bcd4f9",
+      "DisplayName": "GoogleAuthClient",
+      "ColorIndex": 7
+    },
+    "7fa07408-40fd-4561-8ac4-2467cf286567": {
+      "ProjectGuid": "7fa07408-40fd-4561-8ac4-2467cf286567",
+      "DisplayName": "BlazorGoolgeClient",
+      "ColorIndex": 8
+    },
+    "8e0a68a1-47e6-47b6-b05a-0a8bde526025": {
+      "ProjectGuid": "8e0a68a1-47e6-47b6-b05a-0a8bde526025",
+      "DisplayName": "BlazorGoolge.Client",
+      "ColorIndex": 9
+    },
+    "154b17d5-78b8-4e5d-a243-845a0248f9e2": {
+      "ProjectGuid": "154b17d5-78b8-4e5d-a243-845a0248f9e2",
+      "DisplayName": "BlazorAuth.Client",
+      "ColorIndex": 10
     }
   },
-  "NextColorIndex": 6
+  "NextColorIndex": 11
 }

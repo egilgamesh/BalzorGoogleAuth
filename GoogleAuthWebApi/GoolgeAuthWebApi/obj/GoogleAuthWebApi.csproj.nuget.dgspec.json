@@ -4,14 +4,14 @@
     "C:\\Users\\Jawad\\Documents\\GitHub\\BalzorGoogleAuth\\GoogleAuthWebApi\\GoolgeAuthWebApi\\GoogleAuthWebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jawad\\Documents\\GitHub\\BalzorGoogleAuth\\GoogleAuthWebApi\\BlazorGoolgeClient\\BlazorGoolgeClient.csproj": {
+    "C:\\Users\\Jawad\\Documents\\GitHub\\BalzorGoogleAuth\\GoogleAuthWebApi\\BlazorAuth.Client\\BlazorAuth.Client.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jawad\\Documents\\GitHub\\BalzorGoogleAuth\\GoogleAuthWebApi\\BlazorGoolgeClient\\BlazorGoolgeClient.csproj",
-        "projectName": "BlazorGoolgeClient",
-        "projectPath": "C:\\Users\\Jawad\\Documents\\GitHub\\BalzorGoogleAuth\\GoogleAuthWebApi\\BlazorGoolgeClient\\BlazorGoolgeClient.csproj",
+        "projectUniqueName": "C:\\Users\\Jawad\\Documents\\GitHub\\BalzorGoogleAuth\\GoogleAuthWebApi\\BlazorAuth.Client\\BlazorAuth.Client.csproj",
+        "projectName": "BlazorAuth.Client",
+        "projectPath": "C:\\Users\\Jawad\\Documents\\GitHub\\BalzorGoogleAuth\\GoogleAuthWebApi\\BlazorAuth.Client\\BlazorAuth.Client.csproj",
         "packagesPath": "C:\\Users\\Jawad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jawad\\Documents\\GitHub\\BalzorGoogleAuth\\GoogleAuthWebApi\\BlazorGoolgeClient\\obj\\",
+        "outputPath": "C:\\Users\\Jawad\\Documents\\GitHub\\BalzorGoogleAuth\\GoogleAuthWebApi\\BlazorAuth.Client\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -48,10 +48,6 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
-            "Microsoft.AspNetCore.Components.Authorization": {
-              "target": "Package",
-              "version": "[6.0.1, )"
-            },
             "Microsoft.AspNetCore.Components.WebAssembly": {
               "target": "Package",
               "version": "[6.0.1, )"
@@ -132,8 +128,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\Jawad\\Documents\\GitHub\\BalzorGoogleAuth\\GoogleAuthWebApi\\BlazorGoolgeClient\\BlazorGoolgeClient.csproj": {
-                "projectPath": "C:\\Users\\Jawad\\Documents\\GitHub\\BalzorGoogleAuth\\GoogleAuthWebApi\\BlazorGoolgeClient\\BlazorGoolgeClient.csproj"
+              "C:\\Users\\Jawad\\Documents\\GitHub\\BalzorGoogleAuth\\GoogleAuthWebApi\\BlazorAuth.Client\\BlazorAuth.Client.csproj": {
+                "projectPath": "C:\\Users\\Jawad\\Documents\\GitHub\\BalzorGoogleAuth\\GoogleAuthWebApi\\BlazorAuth.Client\\BlazorAuth.Client.csproj"
               }
             }
           }

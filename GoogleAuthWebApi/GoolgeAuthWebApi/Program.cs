@@ -14,6 +14,9 @@ builder.Services.AddAuthentication(options =>
 {
 	googleOptions.ClientId = builder.Configuration.GetSection("Google:ClientId").Value;
 	googleOptions.ClientSecret = builder.Configuration.GetSection("Google:ClientSecret").Value;
+	googleOptions.CallbackPath = "/profile";
+	googleOptions.ClaimActions.MapJsonKey("urn:google:picture", "picture", "url");
+	googleOptions.ClaimActions.MapJsonKey("urn:google:locale", "locale", "string");
 });
 
 var app = builder.Build();

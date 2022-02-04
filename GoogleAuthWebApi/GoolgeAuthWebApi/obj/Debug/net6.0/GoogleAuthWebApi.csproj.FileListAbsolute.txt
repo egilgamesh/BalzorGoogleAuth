@@ -75,7 +75,6 @@ C:\Users\Jawad\Documents\GitHub\BalzorGoogleAuth\GoogleAuthWebApi\GoolgeAuthWebA
 C:\Users\Jawad\Documents\GitHub\BalzorGoogleAuth\GoogleAuthWebApi\GoolgeAuthWebApi\bin\Debug\net6.0\BlazorDebugProxy\Microsoft.CodeAnalysis.dll
 C:\Users\Jawad\Documents\GitHub\BalzorGoogleAuth\GoogleAuthWebApi\GoolgeAuthWebApi\bin\Debug\net6.0\BlazorDebugProxy\Newtonsoft.Json.dll
 C:\Users\Jawad\Documents\GitHub\BalzorGoogleAuth\GoogleAuthWebApi\GoolgeAuthWebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Components.WebAssembly.Server.dll
-C:\Users\Jawad\Documents\GitHub\BalzorGoogleAuth\GoogleAuthWebApi\GoolgeAuthWebApi\bin\Debug\net6.0\BlazorGoolgeClient.staticwebassets.runtime.json
 C:\Users\Jawad\Documents\GitHub\BalzorGoogleAuth\GoogleAuthWebApi\GoolgeAuthWebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Authorization.dll
 C:\Users\Jawad\Documents\GitHub\BalzorGoogleAuth\GoogleAuthWebApi\GoolgeAuthWebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Components.dll
 C:\Users\Jawad\Documents\GitHub\BalzorGoogleAuth\GoogleAuthWebApi\GoolgeAuthWebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Forms.dll
@@ -85,7 +84,8 @@ C:\Users\Jawad\Documents\GitHub\BalzorGoogleAuth\GoogleAuthWebApi\GoolgeAuthWebA
 C:\Users\Jawad\Documents\GitHub\BalzorGoogleAuth\GoogleAuthWebApi\GoolgeAuthWebApi\bin\Debug\net6.0\Microsoft.JSInterop.dll
 C:\Users\Jawad\Documents\GitHub\BalzorGoogleAuth\GoogleAuthWebApi\GoolgeAuthWebApi\bin\Debug\net6.0\Microsoft.JSInterop.WebAssembly.dll
 C:\Users\Jawad\Documents\GitHub\BalzorGoogleAuth\GoogleAuthWebApi\GoolgeAuthWebApi\bin\Debug\net6.0\System.IO.Pipelines.dll
-C:\Users\Jawad\Documents\GitHub\BalzorGoogleAuth\GoogleAuthWebApi\GoolgeAuthWebApi\bin\Debug\net6.0\BlazorGoolgeClient.dll
-C:\Users\Jawad\Documents\GitHub\BalzorGoogleAuth\GoogleAuthWebApi\GoolgeAuthWebApi\bin\Debug\net6.0\BlazorGoolgeClient.pdb
 C:\Users\Jawad\Documents\GitHub\BalzorGoogleAuth\GoogleAuthWebApi\GoolgeAuthWebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Components.Authorization.dll
 C:\Users\Jawad\Documents\GitHub\BalzorGoogleAuth\GoogleAuthWebApi\GoolgeAuthWebApi\bin\Debug\net6.0\Microsoft.AspNetCore.Components.WebAssembly.Authentication.dll
+C:\Users\Jawad\Documents\GitHub\BalzorGoogleAuth\GoogleAuthWebApi\GoolgeAuthWebApi\bin\Debug\net6.0\BlazorAuth.Client.staticwebassets.runtime.json
+C:\Users\Jawad\Documents\GitHub\BalzorGoogleAuth\GoogleAuthWebApi\GoolgeAuthWebApi\bin\Debug\net6.0\BlazorAuth.Client.dll
+C:\Users\Jawad\Documents\GitHub\BalzorGoogleAuth\GoogleAuthWebApi\GoolgeAuthWebApi\bin\Debug\net6.0\BlazorAuth.Client.pdb

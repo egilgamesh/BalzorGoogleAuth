@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GoogleAuthWebApi", "GoolgeAuthWebApi\GoogleAuthWebApi.csproj", "{3661B39A-38E9-4364-9F5F-DFE1FB62390A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorGoolgeClient", "BlazorGoolgeClient\BlazorGoolgeClient.csproj", "{7FA07408-40FD-4561-8AC4-2467CF286567}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BlazorAuth.Client", "BlazorAuth.Client\BlazorAuth.Client.csproj", "{154B17D5-78B8-4E5D-A243-845A0248F9E2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{3661B39A-38E9-4364-9F5F-DFE1FB62390A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3661B39A-38E9-4364-9F5F-DFE1FB62390A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3661B39A-38E9-4364-9F5F-DFE1FB62390A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7FA07408-40FD-4561-8AC4-2467CF286567}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7FA07408-40FD-4561-8AC4-2467CF286567}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7FA07408-40FD-4561-8AC4-2467CF286567}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7FA07408-40FD-4561-8AC4-2467CF286567}.Release|Any CPU.Build.0 = Release|Any CPU
+		{154B17D5-78B8-4E5D-A243-845A0248F9E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{154B17D5-78B8-4E5D-A243-845A0248F9E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{154B17D5-78B8-4E5D-A243-845A0248F9E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{154B17D5-78B8-4E5D-A243-845A0248F9E2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

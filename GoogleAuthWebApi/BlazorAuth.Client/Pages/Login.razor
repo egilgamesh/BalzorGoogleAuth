@@ -1,0 +1,22 @@
+﻿@page "/Login"
+
+
+@inject NavigationManager navigationManager
+
+<h2><b>Login</b></h2>
+<hr>
+
+<br />
+
+<br />
+<br />
+<div class="col-6">
+	<a class="btn btn-block btn-social btn-google" @onclick="GoogleSignIn">
+		<span class="fa fa-google"></span> <b>Sign in with Google</b>
+	</a>
+</div>
+
+@code {
+
+	private void GoogleSignIn() => navigationManager.NavigateTo("user/GoogleSignIn", true);
+}
