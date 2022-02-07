@@ -11,7 +11,7 @@ namespace GoogleAuthWebApi.Controllers;
 [ApiController]
 public class UserController : ControllerBase
 {
-	private IConfiguration? configuration;
+	public IConfiguration? Configuration { get; private set; }
 
 	[HttpGet("logoutuser")]
 	public async Task<ActionResult<string>> LogOutUser()
@@ -23,7 +23,7 @@ public class UserController : ControllerBase
 	[HttpGet("GoogleSignIn")]
 	public async Task GoogleSignIn()
 	{
-		configuration = new ConfigurationManager();
+		Configuration = new ConfigurationManager();
 		await HttpContext.ChallengeAsync(GoogleDefaults.AuthenticationScheme,
 			new AuthenticationProperties { RedirectUri = "https://localhost:44327/signin-google" });
 	}
@@ -31,12 +31,12 @@ public class UserController : ControllerBase
 	[HttpGet("getcurrentuser")]
 	public async Task<ActionResult<User>> GetCurrentUser()
 	{
-
 		var currentUser = new User();
 		if (User.Identity!.IsAuthenticated)
 		{
 			currentUser.Name = User.FindFirstValue(ClaimTypes.Name);
-			currentUser.ProfilePictureUrl =User.FindFirstValue(ClaimTypes.Uri);
+			currentUser.ProfilePictureUrl =
+				User.Claims.FirstOrDefault(claim => claim.Type == "picture")!.Value;
 		}
 		return await Task.FromResult(currentUser);
 	}

@@ -1,26 +1,28 @@
 ﻿@using Microsoft.AspNetCore.Components.Authorization
 @using Microsoft.AspNetCore.Components.WebAssembly.Authentication
+@using System.Security.Claims
 @inject NavigationManager navigationManager
 @inject HttpClient httpClient
 @inject SignOutSessionStateManager SignOutManager
 
 <AuthorizeView>
     <Authorized>
-        Hello, @context.User.Identity?.Name!
-        <button class="nav-link btn btn-link" @onclick="LogoutUser">Log out</button>
+			Hello, @context.User.Identity?.Name! &nbsp;  <img width="30" height="30" src="@context.User.Claims.FirstOrDefault(claim => claim.Type == ClaimTypes.Uri)!.Value"/>
+			
+			<button class="nav-link btn btn-link" @onclick="LogoutUser">Log out</button>
+			
     </Authorized>
     <NotAuthorized>
-        <a href="" @onclick="LoginUser">Log in</a>
-    </NotAuthorized>
+			<a href="" @onclick="LoginUser">Log in</a>
+		</NotAuthorized>
 </AuthorizeView>
 
 @code{
     private async Task BeginSignOut(MouseEventArgs args)
     {
 	    navigationManager.NavigateTo("user/logoutuser");
-	    navigationManager.NavigateTo("/");
-
-	    //await SignOutManager.SetSignOutState();
+	    navigationManager.NavigateTo("/",true);
+	//await SignOutManager.SetSignOutState();
     }
 
 	private async Task LogoutUser()

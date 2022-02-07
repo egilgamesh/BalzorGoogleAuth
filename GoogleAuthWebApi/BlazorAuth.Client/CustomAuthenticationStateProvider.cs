@@ -31,8 +31,9 @@ public class CustomAuthenticationStateProvider : AuthenticationStateProvider
 		if (string.IsNullOrEmpty(currentUser?.Name))
 			return new AuthenticationState(new ClaimsPrincipal(new ClaimsIdentity()));
 		var claimUsername = new Claim(ClaimTypes.Name, currentUser.Name);
+		var claimProfilePicture = new Claim(ClaimTypes.Uri, currentUser.ProfilePictureUrl!);
 		var claimsPrincipal =
-			new ClaimsPrincipal(new ClaimsIdentity(new[] { claimUsername }, "serverAuth"));
+			new ClaimsPrincipal(new ClaimsIdentity(new[] { claimUsername, claimProfilePicture }, "serverAuth"));
 		return new AuthenticationState(claimsPrincipal);
 	}
 

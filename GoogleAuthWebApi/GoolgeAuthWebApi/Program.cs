@@ -1,3 +1,4 @@
+using System.Security.Claims;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Cookies;
 
@@ -15,6 +16,14 @@ builder.Services.AddAuthentication(options =>
 	googleOptions.ClientId = builder.Configuration.GetSection("Google:ClientId").Value;
 	googleOptions.ClientSecret = builder.Configuration.GetSection("Google:ClientSecret").Value;
 	googleOptions.CallbackPath = "/profile";
+	googleOptions.Scope.Add("profile");
+	googleOptions.Events.OnCreatingTicket = context =>
+	{
+		string? pictureUrl = context.User.GetProperty("picture").GetString();
+		context.Identity!.AddClaim(new Claim("picture", pictureUrl!));
+		return Task.CompletedTask;
+	};
+
 	googleOptions.ClaimActions.MapJsonKey("urn:google:picture", "picture", "url");
 	googleOptions.ClaimActions.MapJsonKey("urn:google:locale", "locale", "string");
 });
