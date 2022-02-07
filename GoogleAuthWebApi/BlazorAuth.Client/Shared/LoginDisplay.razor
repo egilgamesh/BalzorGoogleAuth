@@ -7,7 +7,7 @@
 <AuthorizeView>
     <Authorized>
         Hello, @context.User.Identity?.Name!
-        <button class="nav-link btn btn-link" @onclick="BeginSignOut">Log out</button>
+        <button class="nav-link btn btn-link" @onclick="LogoutUser">Log out</button>
     </Authorized>
     <NotAuthorized>
         <a href="" @onclick="LoginUser">Log in</a>
@@ -17,11 +17,17 @@
 @code{
     private async Task BeginSignOut(MouseEventArgs args)
     {
-        await SignOutManager.SetSignOutState();
 	    navigationManager.NavigateTo("user/logoutuser");
+	    navigationManager.NavigateTo("/");
+
+	    //await SignOutManager.SetSignOutState();
     }
 
+	private async Task LogoutUser()
+	{
+		await httpClient.GetAsync("user/logoutuser");
+		navigationManager.NavigateTo("/", true);
+	}
 
 	private void LoginUser() => navigationManager.NavigateTo("user/GoogleSignIn", true);
-}
 }

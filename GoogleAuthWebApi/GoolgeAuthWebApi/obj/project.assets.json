@@ -7695,45 +7695,39 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Jawad\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\LENOVO\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Jawad\\Documents\\GitHub\\BalzorGoogleAuth\\GoogleAuthWebApi\\GoolgeAuthWebApi\\GoogleAuthWebApi.csproj",
+      "projectUniqueName": "C:\\Users\\LENOVO\\source\\repos\\GoogleAuth\\GoogleAuth\\GoogleAuthWebApi\\GoolgeAuthWebApi\\GoogleAuthWebApi.csproj",
       "projectName": "GoogleAuthWebApi",
-      "projectPath": "C:\\Users\\Jawad\\Documents\\GitHub\\BalzorGoogleAuth\\GoogleAuthWebApi\\GoolgeAuthWebApi\\GoogleAuthWebApi.csproj",
-      "packagesPath": "C:\\Users\\Jawad\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Jawad\\Documents\\GitHub\\BalzorGoogleAuth\\GoogleAuthWebApi\\GoolgeAuthWebApi\\obj\\",
+      "projectPath": "C:\\Users\\LENOVO\\source\\repos\\GoogleAuth\\GoogleAuth\\GoogleAuthWebApi\\GoolgeAuthWebApi\\GoogleAuthWebApi.csproj",
+      "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\LENOVO\\source\\repos\\GoogleAuth\\GoogleAuth\\GoogleAuthWebApi\\GoolgeAuthWebApi\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Jawad\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\Jawad\\Documents\\GitHub\\BalzorGoogleAuth\\GoogleAuthWebApi\\BlazorAuth.Client\\BlazorAuth.Client.csproj": {
-              "projectPath": "C:\\Users\\Jawad\\Documents\\GitHub\\BalzorGoogleAuth\\GoogleAuthWebApi\\BlazorAuth.Client\\BlazorAuth.Client.csproj"
+            "C:\\Users\\LENOVO\\source\\repos\\GoogleAuth\\GoogleAuth\\GoogleAuthWebApi\\BlazorAuth.Client\\BlazorAuth.Client.csproj": {
+              "projectPath": "C:\\Users\\LENOVO\\source\\repos\\GoogleAuth\\GoogleAuth\\GoogleAuthWebApi\\BlazorAuth.Client\\BlazorAuth.Client.csproj"
             }
           }
         }

@@ -1,4 +1,5 @@
 ﻿using System.Security.Claims;
+using GoogleAuthWebApi.Models;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.Google;
 using Microsoft.AspNetCore.Authorization;
@@ -19,6 +20,28 @@ public class UserController : ControllerBase
 		return "Success";
 	}
 
+
+	////Authentication Methods
+	//[HttpPost("loginuser")]
+	//public async Task<ActionResult<User>> LoginUser(User user)
+	//{
+	//	user.Password = Utility.Encrypt(user.Password);
+	//	User loggedInUser = await _context.Users.Where(u => u.EmailAddress == user.EmailAddress && u.Password == user.Password).FirstOrDefaultAsync();
+
+	//	if (loggedInUser != null)
+	//	{
+	//		//create a claim
+	//		var claim = new Claim(ClaimTypes.Email, loggedInUser.EmailAddress);
+	//		//create claimsIdentity
+	//		var claimsIdentity = new ClaimsIdentity(new[] { claim }, "serverAuth");
+	//		//create claimsPrincipal
+	//		var claimsPrincipal = new ClaimsPrincipal(claimsIdentity);
+	//		//Sign In User
+	//		await HttpContext.SignInAsync(claimsPrincipal);
+	//	}
+	//	return await Task.FromResult(loggedInUser);
+	//}
+
 	[HttpGet("GoogleSignIn")]
 	public async Task GoogleSignIn()
 	{
@@ -27,15 +50,17 @@ public class UserController : ControllerBase
 			new AuthenticationProperties { RedirectUri = "https://localhost:44327/signin-google" });
 	}
 
-	[Authorize]
 	[HttpGet("getcurrentuser")]
-	public async Task<Dictionary<string, string>> GetCurrentUser()
+	public async Task<ActionResult<User>> GetCurrentUser()
 	{
-		Dictionary<string,string> result = new Dictionary<string,string>();
+
+		var currentUser = new User();
 		if (User.Identity!.IsAuthenticated)
-			result.Add("Username",User.FindFirstValue(ClaimTypes.Name));
-		return await Task.FromResult(result);
-		return null;
+		{
+			currentUser.Name = User.FindFirstValue(ClaimTypes.Name);
+			currentUser.ProfilePictureUrl =User.FindFirstValue(ClaimTypes.Uri);
+		}
+		return await Task.FromResult(currentUser);
 	}
 
 	[Authorize]
